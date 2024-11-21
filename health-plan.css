@@ -1,0 +1,597 @@
+:root {
+  --clr-bg-color: #e0e0e0;
+  --clr-color: #333333;
+  --clr-strong: #ff6a13;
+  --clr-accent: #62a8d5;
+
+  /*sizes*/
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-s: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+*,
+::before,
+::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  line-height: calc(1em + 0.5rem);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto";
+  background-image: linear-gradient(
+    360deg,
+    rgb(129, 136, 230),
+    rgb(207, 206, 244)
+  );
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background-color: none;
+  cursor: pointer;
+  color: inherit;
+}
+/* navbar */
+.logoImg {
+  height: 2em;
+  width: 7em;
+}
+.navBar {
+  background-color: #5159be;
+  color: white;
+  padding: 1em;
+  height: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navBarList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+.navBarList ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.navBarList ul li {
+  list-style-type: none;
+  font-size: var(--size-base);
+  font-size: var(--size-lg);
+  font-weight: bold;
+}
+.navBarList button {
+  background-color: var(--clr-color);
+  height: 40px;
+  width: 80px;
+  border: 1px solid transparent;
+  border-radius: 2em;
+  font-size: var(--size-base);
+}
+/* navbar end */
+/* section 2 (cards section) */
+.section2-Container {
+  padding: 3em;
+  height: calc(100svh - 4rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section2-cardsContainer {
+  margin: var(--size-base);
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+.card1 {
+  margin: var(--size-base);
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card1 p {
+  text-align: center;
+}
+.card1 a {
+  height: 10%;
+}
+.card2 {
+  margin: var(--size-base);
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card2 p {
+  text-align: center;
+}
+.card2 a {
+  height: 10%;
+}
+.card3 {
+  margin: var(--size-base);
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card3 p {
+  text-align: center;
+}
+.card3 a {
+  height: 10%;
+}
+.section2-cardImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/uptrend.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+  width: 100%;
+}
+.section2-cardImg img {
+  border-radius: 1em;
+}
+.section2-cardImg1 {
+  background-image: url(./images/landingHero2.jpeg);
+}
+.section2-cardImg2 {
+  background-image: url(./images/healthyDiet2.jpg);
+}
+.section2-cardImg3 {
+  background-image: url(./images/goldenDollar.jpg);
+}
+.section2-Button {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--clr-bg-color);
+  color: var(--clr-color);
+  font-size: var(--size-base);
+}
+/* section 2 end */
+/* section 3 (conditions) */
+.section3-Container {
+  height: 25svh;
+}
+.section3-titleContainer {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+}
+.section3-title {
+  padding: 1em;
+  font-size: var(--size-2xl);
+  border-bottom: 2px solid black;
+  height: 20%;
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section3-conditions {
+  height: 80%;
+}
+.section3-conditions-top {
+  height: 30%;
+  display: flex;
+}
+.section3-conditions-bottom {
+  height: 30%;
+  display: flex;
+}
+.section3-conditions-bottom .section3-conditions-name {
+  border-top: 1px solid black;
+}
+.section3-conditions-name {
+  height: 100%;
+  width: 25%;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* section 3 end */
+/* section 4 (cards section) */
+.section4-Container {
+  padding: 3em;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section4-cardsContainer {
+  margin: var(--size-base);
+  height: 80%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+.section4-card1 {
+  margin: var(--size-base);
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section4-card1 p {
+  text-align: center;
+}
+.section4-card1 a {
+  height: 10%;
+}
+.section4-card2 {
+  margin: var(--size-base);
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section4-card2 p {
+  text-align: center;
+}
+.section4-card2 a {
+  height: 10%;
+}
+.section4-card3 {
+  margin: var(--size-base);
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section4-card3 p {
+  text-align: center;
+}
+.section4-card3 a {
+  height: 10%;
+}
+.section4-card4 {
+  margin: var(--size-base);
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section4-card4 p {
+  text-align: center;
+}
+.section4-card4 a {
+  height: 10%;
+}
+.section4-cardImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+  width: 100%;
+}
+.section4-cardImg img {
+  border-radius: 1em;
+}
+.section4-cardImg1 {
+  background-image: url(./images/mentalHealth.jpg);
+}
+.section4-cardImg2 {
+  background-image: url(./images/dietAndweight.jpg);
+}
+.section4-cardImg3 {
+  background-image: url(./images/healthyAging2.jpg);
+}
+.section4-cardImg4 {
+  background-image: url(./images/dumbellCurls_fitness.jpg);
+}
+.section4-Button {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--clr-bg-color);
+  color: var(--clr-color);
+  font-size: var(--size-base);
+}
+/* section 4 end */
+/* section 5 (explore by) */
+.section5-Container {
+  padding: 3em;
+  height: 80svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-image: linear-gradient(rgb(140, 146, 230), rgb(196, 195, 253)); */
+}
+.section5-cardsContainer {
+  margin: var(--size-base);
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: red; */
+}
+.section5-card1 {
+  margin: var(--size-base);
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+  height: 20em;
+  width: 20em;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section5-card1 p {
+  text-align: center;
+}
+.section5-card1 a {
+  height: 10%;
+}
+.section5-card2 {
+  margin: var(--size-base);
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+  height: 20em;
+  width: 20em;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section5-card2 p {
+  text-align: center;
+}
+.section5-card2 a {
+  height: 10%;
+}
+.section5-card3 {
+  margin: var(--size-base);
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+  height: 20em;
+  width: 20em;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section5-card3 p {
+  text-align: center;
+}
+.section5-card3 a {
+  height: 10%;
+}
+.section5-card4 {
+  margin: var(--size-base);
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+  height: 20em;
+  width: 20em;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section5-card4 p {
+  text-align: center;
+}
+.section5-card4 a {
+  height: 10%;
+}
+.section5-cardImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+.section5-cardImg img {
+  border-radius: 1em;
+}
+.section5-cardImg1 {
+  background-image: url(./images/clockWithFruits.jpg);
+}
+.section5-cardImg2 {
+  background-image: url(./images/mentalHealth.jpg);
+}
+.section5-cardImg3 {
+  background-image: url(./images/barbell\_DeadLift\_fitness.jpg);
+}
+.section5-cardImg4 {
+  background-image: url(./images/womenSleeping.jpg);
+}
+.text {
+  font-size: var(--size-xl);
+}
+.section5-card {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section5-Button {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  color: transparent;
+  color: var(--clr-color);
+  font-size: var(--size-base);
+}
+/* section 5 end */
+/* section 6 (footer) */
+.section6 {
+  height: 30svh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section6 .about {
+  display: flex;
+  flex-direction: column;
+}
+.section6 .pages {
+  display: flex;
+  flex-direction: column;
+}
+.section6 .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.section6 .logo {
+  margin-bottom: 30px;
+}
+.section6 h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.section6 p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+.section6 a {
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+}
+.section6 .follow {
+  margin-top: 20px;
+}
+.section6 .follow i {
+  color: var(--color);
+  padding-right: 4px;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color);
+  }
+}
+.section6 .install .row img {
+  border: 2px solid var(--color);
+}
+.section6 .copyright {
+  width: 100%;
+  text-align: center;
+}
+.copyright {
+  display: grid;
+  place-items: center;
+}
+.copyright p {
+  display: grid;
+  place-items: center;
+  height: 2em;
+  border-top: 1px solid black;
+  width: 95%;
+  color: white;
+  text-align: center;
+}
+/* section 6 end */
+
+/*extra-small (xs)*/
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/*small (sm)*/
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/*medium (md)*/
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/*large (ld)*/
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/*extra-large (xl)*/
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/*extra-extra large (2xl)*/
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
